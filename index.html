@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application_Form</title>
+<style>
+h4{text-align: center;}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+
+}
+input[type=submit], input[type=reset] {
+  background-color: #04AA6D;
+  /* border: red;
+  color: white;
+  padding: 10px 20px; */
+ 
+}
+
+.form-container{
+  display:grid;
+  place-items:center;
+  min-height:100vh
+  /* <!-- vh stands for view port height --> */
+
+}
+
+/* form{width:35%} */
+
+.form-container{
+  background-color: azure;
+}
+
+</style>
+
+</head>
+<body><fieldset><legend>Child Care Registration Form</legend>
+    <h4>Child Care Application Form</h4>
+    <figure>
+<img src="../Interactions/Images/childcare.jpeg"  alt="ChildCare" class="center" >
+    </figure>
+<hr>
+<br>
+
+<div class="form-container">
+
+<h5>Information of Child</h5>
+<form>
+
+<label for="fname">First Name</label>&emsp;&emsp;&emsp;
+<input type="text" id="fname" title="FName" name="fname" required>
+
+<br><br>
+
+<label for="lname">Last Name</label>&emsp;&emsp;&emsp;
+<input type="text" id="lname" title="LName" name="lname">
+
+<br><br>
+
+<label for="birth">Date of Birth</label>&emsp;&emsp;
+<input type="datetime-local" id="birth" title="DOB" name="birth">
+
+<br><br>
+
+<label for="address">Address</label>&emsp;&emsp;&emsp;&emsp;
+<input type="text" id ="address" title="address" name="address">
+
+
+<br><br>
+
+<label for="gender" >Gender</label>&emsp;&emsp;&emsp;
+<input type="radio" id="gender" title="gender" name="Gender" value="Male"> Male
+<input type="radio" id="gender" title="gender" name="Gender" value="Female"> female
+
+<br><br>
+
+<label for="childcare">Hours of Child Care required(School hours are 7 a.m to 6 p.m)</label> <br>
+<input type="radio" id="childcare" name="Hours of Child Care required(School hours are 7 a.m to 6 p.m)" value="Full Day"> Full Day
+<br>
+<input type="radio" id="childcare" name="Hours of Child Care required(School hours are 7 a.m to 6 p.m)" value="Half Day Afternoon"> Half Day Afternoon
+<br>
+<input type="radio" id="childcare" name="Hours of Child Care required(School hours are 7 a.m to 6 p.m)" value="Full day Morning"> Full day Morning
+<br>
+<input type="radio" id="childcare" name="Hours of Child Care required(School hours are 7 a.m to 6 p.m)" value="Others"> Others
+
+<br><br>
+
+<label for="daysrequired">Days of the Week required</label> <br>
+<input type="checkbox" id="daysrequired" name="Days of the Week required1" value="Monday"> Monday
+<br>
+<input type="checkbox" id="daysrequired" name="Days of the Week required2" value="Tuesday"> Tuesday
+<br>
+<input type="checkbox" id="daysrequired" name="Days of the Week required3"value="Wednesday"> Wednesday
+<br>
+<input type="checkbox" id="daysrequired" name="Days of the Week required4" value="Thursday"> Thursday
+<br>
+<input type="checkbox" id="daysrequired" name="Days of the Week required5" value="Friday"> Friday
+
+<br><br>
+
+<label for="schoolcare">Do you require before school or after school care</label> <br>
+<input type="checkbox" id="schoolcare" name="Do you require before school or after school care" value="Before School"> Before School
+<br>
+<input type="checkbox" id="schoolcare" name="Do you require before school or after school care" value="After School"> After School
+
+<br><br>
+
+<hr>
+
+<p>Information of Parent</p>
+
+<label for="parentinfo">Name</label>&emsp;&emsp;&emsp;&emsp;
+<input type="text" id="parentinfo" name="parentinfo">
+
+<br><br>
+
+<label for="relation">Relation</label>&emsp;&emsp;&emsp;
+<input type="text" id="relation" name="relationship">
+<br><br>
+
+<label for="phone">Phone Number</label>
+<input type="num" id="phone" name="phone">
+
+<br><br>
+
+<label for="address">Address</label>&emsp;&emsp;&emsp;
+<input type="text" id="address" name="address">
+
+<br><br>
+
+<label for="workplace">Workplace</label>&emsp;&emsp;
+<input type="text" id="workplace" name="workplace">
+
+<br>
+<hr>
+<p>Emergency Contact Number</p>
+
+<label for="parentinfo">Name</label>&emsp;&emsp;&emsp;&emsp;
+<input type="text" id="parentinfo" name="parentinfo">
+
+<br><br>
+
+<label for="relation">Relation</label>&emsp;&emsp;&emsp;
+<input type="text" id="relation" name="relationship">
+<br><br>
+
+<label for="phone">Phone Number</label>
+<input type="num" id="phone" name="phone">
+
+<br><br>
+
+<label for="address">Address</label>&emsp;&emsp;&emsp;
+<input type="text" id="address" name="address">
+
+<br><br>
+
+<label for="workplace">Workplace</label>&emsp;&emsp;
+<input type="text" id="workplace" name="workplace">
+
+<br>
+<hr>
+<p>Other People Authorized to pick up the Child </p>
+
+<label for="parentinfo">Name</label>&emsp;&emsp;&emsp;&emsp;
+<input type="text" id="parentinfo" name="parentinfo">
+
+<br><br>
+
+<label for="relation">Relation</label>&emsp;&emsp;&emsp;
+<input type="text" id="relation" name="relationship">
+<br><br>
+
+<label for="phone">Phone Number</label>
+<input type="num" id="phone" name="phone">
+
+<br><br>
+
+<label for="emailaddress">Address</label>&emsp;&emsp;&emsp;
+<input type="emil" id="emailaddress" name="emailaddress">
+
+<br><br>
+
+<label for="workplace">Workplace</label>&emsp;&emsp;
+<input type="text" id="workplace" name="workplace">
+<br><br>
+<hr>
+
+<input type="email" id="email" name="email" placeholder="Enter your Email" >
+<!-- <label for="passcode">Password</label>&emsp;&emsp; -->
+<br><br>
+<input type="password" id="passcode" name="passcode" placeholder="Enter your Password" pattern="=(?=.*\d)(?=.*\[a-z])(?=.*\[A-Z]){8,}">
+<br>
+<hr>
+
+<h5>Please upload Aadharcard photo copy of the Parent</h5>
+<label for="upload">Upload a file</label>&emsp;&emsp;
+<input type="file" id="upload" name="upload" multiple>
+
+<hr>
+<input type="reset" value="Reset">
+<input type="submit" value="Submit">
+<br><br>
+
+
+
+    </fieldset>
+</form>
+
+</div>
+
+</body>
+</html>
